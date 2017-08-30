@@ -10,15 +10,15 @@ The goal of this project is to properly control a simulated vehicles steering an
 * tau_i - <em>Integral control to handle the CTE integral.</em>
 
 
-##Controller steps
+## Controller steps
 
-###Parameter Update  
+### Parameter Update  
 * This PID controller utilizes the following rules:
     * tau_p is increased by 0.001 if 30th MSE value is greater than 3
     * tau_d is increased by 0.01 if 30th MSE value is between 0.3 and 1
     * tau_i is increased by 0.000001 if 30th MSE value is between 0.01 and 0.1
 
-###Parameter selection
+### Parameter selection
 * Parameters must be selected due to our inability to control steering angles at initialization and the danger of highly increasing parameters.
 
 ## Dependencies
